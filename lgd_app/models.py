@@ -52,7 +52,7 @@ class Course(models.Model):
 class Progress(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='progress')
     employee = models.ForeignKey(User, on_delete=models.CASCADE, related_name='progress')
-    completion_percentage = models.FloatField(default=0.0)
+    completion_percentage = models.FloatField(default=100.0)
 
 class Feedback(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='feedback')
