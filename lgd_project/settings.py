@@ -114,12 +114,4 @@ ROOT_URLCONF = 'lgd_project.urls'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 SECRET_KEY = 'akd^kqe$vcn54n5dv&ygpa@u#8k8^qf3^+qp*9@3qg(^1rskln'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-
-EMAIL_HOST_USER = os.environ.get('EMAIL_ADDRESS')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
-EMAIL_USE_TLS = True
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
